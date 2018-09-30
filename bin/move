@@ -1,5 +1,14 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/move.rb'
+# require_relative '../lib/move.rb'
+# CLI = Command Line Interface
+# gets = read in input from the user
 
-# Code your CLI Here
+
+puts "Welcome to the Tic Tac Toe!"
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+user_input = gets.strip
+
+index = input_to_index(user_input)
